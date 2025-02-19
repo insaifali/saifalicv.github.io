@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saif Ali - Software Engineer (Undergraduate)</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://unpkg.com/scrollreveal"></script> <!-- For scroll animations -->
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="header-content">
+            <h1>SAIF ALI</h1>
+            <p>SOFTWARE ENGINEER (UNDERGRADUATE)</p>
+            <div class="scroll-down">
+                <span>Scroll Down</span>
+                <i class="fas fa-chevron-down"></i>
+            </div>
+        </div>
+    </header>
+ 
+    <!-- Resume Button -->
+    <a href="https://drive.google.com/file/d/1-14J4KxKZffeXvN452pEbZsvzBfdcHYZ/view?usp=drivesdk" class="resume-button" target="_blank">View Resume</a>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="#about">ABOUT ME</a></li>
+            <li><a href="#projects">PROJECTS</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container">
+        <!-- Hero Section -->
+        <section class="hero">
+            <h2>Welcome to My Digital Portfolio</h2>
+            <p>Showcasing Technical Skills & Innovative Projects</p>
+            <a href="#projects" class="cta-button">Explore My Work</a>
+        </section>
+
+        <!-- About Me Section -->
+        <section id="about" class="about-section">
+            <h2>About Me</h2>
+            <p>I'm a passionate software engineering undergraduate with a focus on building scalable and innovative solutions. I love working with modern technologies and solving real-world problems.</p>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects">
+            <h2>My Projects</h2>
+            <div class="project-grid">
+                <div class="project-card">
+                    <h3>Exquisite Motor Company</h3>
+                    <p>A fully functional e-commerce website built with React and Node.js.</p>
+                    <a href="https://insaifali.github.io/" class="project-link" target="_blank">View Project</a>
+                </div>
+                <div class="project-card">
+                    <h3>AI Chatbot</h3>
+                    <p>An AI-powered chatbot using Python and TensorFlow.</p>
+                    <a href="#" class="project-link">View Project</a>
+                </div>
+                <div class="project-card">
+                    <h3>Portfolio Website</h3>
+                    <p>This very portfolio website built with HTML, CSS, and JavaScript.</p>
+                    <a href="#" class="project-link">View Project</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section">
+            <h2>Get in Touch</h2>
+            <form class="contact-form">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-wave"></div>
+        <div class="footer-content">
+            <p>📱 +94 (77) 077 5807</p>
+            <p>🌐 <a href="https://www.soil.com" style="color: white; text-decoration: none;">https://www.soil.com</a></p>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+        <p>Copyright © 2025 <span style="color: #3498db; font-weight: 600;">Saif Ali</span> - Developed & Designed By Insaifali </p>
+    </footer>
+
+    <!-- JavaScript for Animations -->
+    <script>
+        // ScrollReveal Animations
+        ScrollReveal().reveal('.hero', { delay: 300, distance: '50px', origin: 'bottom' });
+        ScrollReveal().reveal('.project-card', { delay: 400, distance: '50px', origin: 'bottom', interval: 200 });
+        ScrollReveal().reveal('.about-section, .contact-section', { delay: 300, distance: '50px', origin: 'bottom' });
+
+        // Smooth Scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
